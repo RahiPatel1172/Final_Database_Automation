@@ -1,0 +1,1 @@
+*/5 * * * * cd /Users/hululu/Downloads/Final\ Database && ./venv/bin/python scripts/monitor_mysql.py >> /var/log/mysql-monitor.log 2>&1 

@@ -1,0 +1,14 @@
+[Unit]
+Description=MySQL Database Monitoring Service
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/Users/hululu/Downloads/Final\ Database
+ExecStart=/Users/hululu/Downloads/Final\ Database/venv/bin/python /Users/hululu/Downloads/Final\ Database/scripts/monitor_mysql.py
+Restart=on-failure
+RestartSec=300
+
+[Install]
+WantedBy=multi-user.target 
